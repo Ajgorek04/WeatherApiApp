@@ -3,10 +3,13 @@ const input = document.querySelector("#input");
 
 button.addEventListener("click", () => {
     console.log(input.value);
-    wiem = input.value;
+    let city = input.value;
+    const cityName = document.querySelector("#cityname");
+    cityName.innerHTML = city;
+
     input.value = "";
 
-    checkWeather(wiem);
+    checkWeather(city);
 });
 
 const API_KEY = "53522ab6c9e4a4f6ed4f713d97ca6bed";
@@ -17,8 +20,4 @@ async function checkWeather(city) {
     let data = await response.json();
 
     console.log(data);
-
-    console.log(data.main.temp);
-    console.log(data.weather[0].main);
-    console.log(data.wind.speed);
 }
