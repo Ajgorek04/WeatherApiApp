@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
         <div class="container">
@@ -13,11 +20,33 @@
                 <div class="selectCountry">
                     <input
                         type="text"
-                        name=""
-                        id=""
-                        placeholder="Enter Country Name"
+                        id="input"
+                        placeholder="Enter City Name"
                     />
-                    <button>Click</button>
+                    <button id="button">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="city">
+                    <i class="fa-solid fa-city fa-2xl"></i>
+                    <h1>Warsaw</h1>
+                </div>
+                <div class="temp">
+                    <img
+                        src="https://openweathermap.org/img/wn/02d@2x.png"
+                        alt=""
+                    />
+                    <h1>20°C</h1>
+                </div>
+                <div class="therest">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet fa-xl"> 50% </i>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind fa-xl"> 2km/h </i>
+                    </div>
                 </div>
             </div>
         </div>
